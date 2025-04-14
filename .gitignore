@@ -1,0 +1,7 @@
+docker-compose.yml
+init.sql
+dockerfile
+sireco.conf
+node_modules
+.env
+dockerfile
