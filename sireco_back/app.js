@@ -25,9 +25,6 @@ app.use(bodyParser.json());
 app.use('/', router);
 
 
-
-
-
 app.listen(process.env.PORT, ()=> {
     console.log(`******************************`)
     console.log(`Server connected on port ${process.env.PORT}`)

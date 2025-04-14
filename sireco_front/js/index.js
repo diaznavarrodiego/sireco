@@ -2374,7 +2374,6 @@ const municipiosPorProvincia = {
     "ALDERETES",
     "GRANEROS",
   ],
-  // Agrega más provincias y sus municipios
 };
 
 function limpiarInput(miInput) {
@@ -2432,7 +2431,7 @@ function mostrarDataContrib(data){
 function borrarFormulario() {
   // const form = document.getElementById("form");
   // form.reset();
-  window.location.href = "http://192.168.0.37:8080/index.html";
+  window.location.href = "http://localhost:8080/index.html";
   //MEJORAR esta funcion para borrar todos los input.
 }
 
@@ -2454,7 +2453,7 @@ buttonBuscarDni.addEventListener("click", async () => {
   //console.log("DNI en el FRONT:------------> ", dni);
   try {
 
-    const response = await fetch(`http://10.240.98.55:3000/buscar/${dni}`, {
+    const response = await fetch(`http://localhost:3000/buscar/${dni}`, {
       method: "GET",
       headers: { "Content-type": "application/json;charset=UTF-8" },
     });

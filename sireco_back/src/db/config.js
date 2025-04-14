@@ -11,7 +11,7 @@ export const pool = createPool({
     port: process.env.MYSQL_PORT
 })
 
-
+// revisar!!! Es para mejorar el manejo de errores conocidos
 // pool.getConnection((err, connection) => {
 //   if (err) {
 //     if (err.code === "PROTOCOL_CONNECTION_LOST")
